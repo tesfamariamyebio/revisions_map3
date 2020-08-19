@@ -37,23 +37,22 @@ const students=[{
 
 ];
     return (
-      <div className="container">
-        <div className="row">
+      <div className="container bg-danger m-6 p-.5">
+        <div className="row mt-5">
         {students.map((x)=>{
           
           return(
             
-                <div className="col-3">
-                 
-                            <ul className="list-group text-center font-weight-normal" >
-                               <li className="list-group-item"> {x.name} {x.surname}
-                               </li>
-                            </ul>
+                <div className="col-3 ml-0.5" >
+                  
+                <Card names={x.name} lastnames={x.surname} />
+                              
+                        
                 </div>            
           )
         })}
         </div>
-        okk 
+       
     </div>
     );
   }
